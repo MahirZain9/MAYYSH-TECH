@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAYYSH TECH — Real Problems. Real Software. | Software Product Company</title>
+  <meta name="description" content="MAYYSH TECH is a software product company building practical software for education, healthcare, and real-world business operations. Home of Era Campus School ERP and Mayysh Care." />
+  <meta name="keywords" content="MAYYSH TECH, software company Patan, software company Gujarat, school management software, school ERP software, offline school software, hospital management software, Mahir Zain" />
+  <meta name="author" content="MAYYSH TECH" />
+  <link rel="canonical" href="https://mayysh-tech.vercel.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MAYYSH TECH" />
+  <meta property="og:title" content="MAYYSH TECH — Real Problems. Real Software." />
+  <meta property="og:description" content="Practical software products built for education, healthcare, and real-world workflows. Zero unnecessary cloud dependencies. Total data ownership." />
+  <meta property="og:url" content="https://mayysh-tech.vercel.app/" />
+  <meta property="og:image" content="https://mayysh-tech.vercel.app/assets/mark.svg" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="MAYYSH TECH — Real Problems. Real Software." />
+  <meta name="twitter:description" content="Software products engineered for real-world reliability. Era Campus School ERP & Mayysh Care." />
+
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+
+  <!-- Schema.org Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "MAYYSH TECH",
+    "url": "https://mayysh-tech.vercel.app/",
+    "logo": "https://mayysh-tech.vercel.app/assets/mark.svg",
+    "founder": {
+      "@type": "Person",
+      "name": "Mahir Zain",
+      "jobTitle": "Founder & CEO"
+    },
+    "description": "Software product company building practical software products for education, healthcare, and real-world workflows.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Patan",
+      "addressRegion": "Gujarat",
+      "addressCountry": "IN"
+    },
+    "areaServed": ["India", "Global"],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-8487083803",
+      "contactType": "sales",
+      "areaServed": "IN"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Era Campus",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Windows 10, Windows 11",
+    "description": "School Management ERP for students, fees, attendance, ID cards, exam papers and offline network operations.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MAYYSH TECH"
+    }
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  <!-- =========================================================
+       NAVIGATION
+  ========================================================= -->
+  <nav class="nav" id="nav">
+    <div class="wrap">
+      <a href="./index.html" class="brand" aria-label="MAYYSH TECH Homepage">
+        <img src="./assets/mark.svg" alt="MAYYSH TECH mark" width="34" height="34" />
+        <span class="brand-name">MAYYSH TECH</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="./products/index.html" class="nav-link" data-i18n="common.navProducts">Products</a>
+        <a href="./industries/index.html" class="nav-link" data-i18n="common.navIndustries">Industries</a>
+        <a href="./solutions/index.html" class="nav-link" data-i18n="common.navSolutions">Solutions</a>
+        <a href="./case-studies/index.html" class="nav-link" data-i18n="common.navDemonstrations">Demonstrations</a>
+        <a href="./resources/index.html" class="nav-link" data-i18n="common.navResources">Resources</a>
+        <a href="./about/index.html" class="nav-link" data-i18n="common.navAbout">About</a>
+        <a href="./contact/index.html" class="nav-link" data-i18n="common.navContact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Language Switcher Pill -->
+        <div class="lang-switch-pill" role="group" aria-label="Language selector">
+          <button type="button" class="lang-btn active" data-lang="en" aria-label="Switch to English">ENGLISH</button>
+          <span class="lang-divider">|</span>
+          <button type="button" class="lang-btn" data-lang="hinglish" aria-label="Switch to Hinglish">HINGLISH</button>
+        </div>
+
+        <a href="./contact/index.html" class="btn btn-primary btn-sm" data-i18n="common.navBookDemo">Book a Demo</a>
+
+        <button type="button" class="nav-toggle-btn" id="navToggle" aria-label="Open mobile navigation" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <a href="./products/index.html" class="nav-link" data-i18n="common.navProducts">Products</a>
+    <a href="./industries/index.html" class="nav-link" data-i18n="common.navIndustries">Industries</a>
+    <a href="./solutions/index.html" class="nav-link" data-i18n="common.navSolutions">Solutions</a>
+    <a href="./case-studies/index.html" class="nav-link" data-i18n="common.navDemonstrations">Demonstrations</a>
+    <a href="./resources/index.html" class="nav-link" data-i18n="common.navResources">Resources</a>
+    <a href="./about/index.html" class="nav-link" data-i18n="common.navAbout">About</a>
+    <a href="./contact/index.html" class="nav-link" data-i18n="common.navContact">Contact</a>
+    <div class="mobile-drawer-bottom">
+      <div class="lang-switch-pill" style="align-self: flex-start;">
+        <button type="button" class="lang-btn active" data-lang="en">ENGLISH</button>
+        <span class="lang-divider">|</span>
+        <button type="button" class="lang-btn" data-lang="hinglish">HINGLISH</button>
+      </div>
+      <a href="./contact/index.html" class="btn btn-primary" data-i18n="common.navBookDemo">Book a Demo</a>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       HERO SECTION
+  ========================================================= -->
+  <header class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow" data-i18n="home.heroEyebrow">SOFTWARE PRODUCT COMPANY</span>
+          <h1 data-i18n="home.heroH1">REAL PROBLEMS.<br>REAL SOFTWARE.</h1>
+          <p class="lead" data-i18n="home.heroLead">
+            MAYYSH TECH builds practical software products designed around the way real people and organizations work.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="./products/index.html" class="btn btn-primary" data-i18n="home.heroCtaProducts">Explore Products</a>
+            <a href="./contact/index.html" class="btn btn-secondary" data-i18n="home.heroCtaTalk">Talk to Us</a>
+          </div>
+
+          <ul class="trust-badges">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <span data-i18n="home.trustBadge1">Data stays completely on your computer</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="1" y1="1" x2="23" y2="23"></line>
+                <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path>
+                <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path>
+                <path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path>
+                <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path>
+                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                <line x1="12" y1="20" x2="12.01" y2="20"></line>
+              </svg>
+              <span data-i18n="home.trustBadge2">Zero internet dependency for daily work</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                <line x1="2" y1="10" x2="22" y2="10"></line>
+              </svg>
+              <span data-i18n="home.trustBadge3">No forced monthly cloud fees</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hero Visual Product Frame with Real Era Campus Screenshot -->
+        <div class="product-display-frame" id="heroProductDisplayFrame">
+          <div class="window-titlebar">
+            <div class="window-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="window-title">Era Campus — School Management ERP (Desktop Edition)</span>
+            <div class="titlebar-status-tags">
+              <span class="status-indicator-pill offline"><span class="status-dot"></span> OFFLINE</span>
+              <span class="status-indicator-pill"><span class="status-dot green"></span> LOCAL DATABASE</span>
+            </div>
+          </div>
+
+          <div class="screenshot-container js-lightbox-trigger" data-src="./assets/era-dashboard.png" data-caption="ERA CAMPUS • Real School ERP — Central Operations Dashboard">
+            <img
+              src="./assets/era-dashboard.png"
+              alt="Era Campus School Management ERP — Real Desktop Application Dashboard"
+              class="real-product-screenshot"
+              width="1920"
+              height="1080"
+              loading="eager"
+            />
+          </div>
+
+          <div class="product-frame-caption">
+            ERA CAMPUS • Real School ERP — Central Operations Dashboard
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       PRODUCTS SECTION
+  ========================================================= -->
+  <section class="section section-alt" id="products">
+    <div class="wrap">
+      <div class="section-header">
+        <span class="eyebrow" data-i18n="home.prodSecEyebrow">OUR PRODUCTS</span>
+        <h2 data-i18n="home.prodSecTitle">Software products built for real work.</h2>
+        <p data-i18n="home.prodSecDesc">
+          We engineer software designed to run reliably under real operating constraints — whether in high-speed offices or remote campuses.
+        </p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Era Campus Card -->
+        <article class="product-card">
+          <div class="product-card-top">
+            <div class="product-card-badge-row">
+              <span class="tag-badge" data-i18n="home.eraCampusCardBadge">School Management ERP</span>
+              <span class="tag-badge badge-neutral">Windows Desktop</span>
+            </div>
+            <h3 data-i18n="home.eraCampusCardTitle">ERA CAMPUS</h3>
+            <p data-i18n="home.eraCampusCardDesc">
+              Manage students, fees, attendance, ID cards, exam papers and parent communications from one connected system.
+            </p>
+            <ul class="feature-checklist">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Student Database with Excel Import & GR verification</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Instant PDF Fee Receipts & Dues Tracking</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Ask Era natural-language offline assistant</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Local Wi-Fi portal for phone attendance</span>
+              </li>
+            </ul>
+          </div>
+          <a href="./products/era-campus/index.html" class="btn btn-primary" data-i18n="home.eraCampusLearnMore">Explore Era Campus →</a>
+        </article>
+
+        <!-- Mayysh Care Card -->
+        <article class="product-card">
+          <div class="product-card-top">
+            <div class="product-card-badge-row">
+              <span class="tag-badge" data-i18n="home.mayyshCareCardBadge">Hospital Management System</span>
+              <span class="tag-badge badge-neutral">Workstation System</span>
+            </div>
+            <h3 data-i18n="home.mayyshCareCardTitle">MAYYSH CARE</h3>
+            <p data-i18n="home.mayyshCareCardDesc">
+              Bring everyday hospital workflows into one practical system — patient registrations, appointments, billing, and pharmacy records.
+            </p>
+            <ul class="feature-checklist">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>OPD Token Generation & Doctor Scheduling</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Itemized Diagnostic & Clinical Invoicing</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Pharmacy Batch Expiry & Stock Controls</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Private on-premises patient health records</span>
+              </li>
+            </ul>
+          </div>
+          <a href="./products/mayysh-care/index.html" class="btn btn-primary" data-i18n="home.mayyshCareLearnMore">Explore Mayysh Care →</a>
+        </article>
+      </div>
+
+      <!-- Pipeline / Coming Next -->
+      <div style="margin-top: 48px;">
+        <span class="eyebrow" data-i18n="home.comingNextTitle">COMING NEXT</span>
+        <div class="coming-next-grid">
+          <div class="coming-card">
+            <span class="tag-badge">COMING NEXT</span>
+            <h4 data-i18n="home.eraCafeTitle">Era Cafe</h4>
+            <p data-i18n="home.eraCafeDesc">Offline table ordering, kitchen KOT, and quick billing for food outlets.</p>
+          </div>
+          <div class="coming-card">
+            <span class="tag-badge">COMING NEXT</span>
+            <h4 data-i18n="home.eraGarageTitle">Era Garage</h4>
+            <p data-i18n="home.eraGarageDesc">Automotive service job cards, spare parts inventory, and invoicing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ASK ERA DIFFERENTIATOR SECTION
+  ========================================================= -->
+  <section class="section section-dark" id="ask-era">
+    <div class="wrap">
+      <div class="ask-era-box">
+        <div class="ask-era-grid">
+          <div class="ask-era-left">
+            <span class="eyebrow on-dark" data-i18n="home.askEraEyebrow">PRODUCT DIFFERENTIATOR</span>
+            <h2 data-i18n="home.askEraHeadline">Don't search through screens.<br>Ask Era.</h2>
+            <p class="ask-era-lead" data-i18n="home.askEraSubhead">
+              Instead of opening multiple screens to find information, school administrators can ask Era questions in plain language.
+            </p>
+
+            <div class="ask-era-questions">
+              <span class="query-prompts-label" data-i18n="home.askEraTryLabel">Example questions:</span>
+              <div class="sample-question-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <span data-i18n="home.askEraSample1">"Which class had the lowest attendance over the last 7 days?"</span>
+              </div>
+              <div class="sample-question-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <span data-i18n="home.askEraSample2">"Show pending fees for Class 10-A."</span>
+              </div>
+              <div class="sample-question-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <span data-i18n="home.askEraSample3">"Which students have been absent for 3 consecutive days?"</span>
+              </div>
+            </div>
+
+            <div class="ask-era-tags-row">
+              <span class="status-indicator-pill offline"><span class="status-dot"></span> 100% OFFLINE</span>
+              <span class="status-indicator-pill"><span class="status-dot green"></span> LOCAL SQL QUERY</span>
+              <span class="status-indicator-pill"><span class="status-dot"></span> ZERO CLOUD SYNC</span>
+            </div>
+          </div>
+
+          <div class="ask-era-right">
+            <div class="product-display-frame ask-era-display-frame">
+              <div class="window-titlebar">
+                <div class="window-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <span class="window-title">Era Campus — Ask Era Plain Language Lookup</span>
+                <span class="status-indicator-pill offline"><span class="status-dot"></span> LOCAL LEDGER</span>
+              </div>
+              <div class="screenshot-container js-lightbox-trigger" data-src="./assets/era-ask-era.png" data-caption="ASK ERA — Plain language query interface in Era Campus">
+                <img
+                  src="./assets/era-ask-era.png"
+                  alt="Ask Era — Real Natural Language Query Interface in Era Campus"
+                  class="real-product-screenshot"
+                  width="1920"
+                  height="1080"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <p class="ask-era-footnote">Powered by your school's local data.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       WHY OFFLINE / RESILIENCE ARCHITECTURE
+  ========================================================= -->
+  <section class="section" id="architecture">
+    <div class="wrap">
+      <div class="section-header center">
+        <span class="eyebrow" data-i18n="home.whyOfflineEyebrow">THE ARCHITECTURE</span>
+        <h2 data-i18n="home.whyOfflineHeadline">Internet down? Operations keep running.</h2>
+        <p data-i18n="home.whyOfflineSubhead">
+          Most enterprise systems lock your doors the moment the internet flickers. MAYYSH products run directly on local infrastructure with automatic synchronization.
+        </p>
+      </div>
+
+      <div class="compare-container">
+        <div class="compare-col fragile">
+          <h3 data-i18n="home.cloudFragileTitle">Typical Cloud-Only Software</h3>
+          <ul class="compare-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              <span data-i18n="home.cloudPoint1">Internet outage halts all billing, admissions & check-ins</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              <span data-i18n="home.cloudPoint2">Mandatory monthly subscriptions even during off-months</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              <span data-i18n="home.cloudPoint3">Your sensitive student or patient records stored on public clouds</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              <span data-i18n="home.cloudPoint4">Slow page loads during peak morning hours</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="compare-col resilient">
+          <h3 data-i18n="home.mayyshAdvantageTitle">MAYYSH Local-First Architecture</h3>
+          <ul class="compare-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="home.mayyshPoint1">100% operational continuity regardless of connectivity</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="home.mayyshPoint2">Straightforward ownership with local security</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="home.mayyshPoint3">Data stays strictly inside your campus or clinic walls</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="home.mayyshPoint4">Zero latency — instant reports, fast PDF generation</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FOUNDER SECTION
+  ========================================================= -->
+  <section class="section section-alt" id="founder">
+    <div class="wrap">
+      <div class="founder-box">
+        <div>
+          <span class="eyebrow" data-i18n="home.founderEyebrow">FOUNDER & PHILOSOPHY</span>
+          <blockquote class="founder-quote" data-i18n="home.founderQuote">
+            “We believe software should solve problems, not create more of them.”
+          </blockquote>
+          <p style="font-size:16px; color:var(--ink-soft); line-height:1.65; margin-bottom:20px;" data-i18n="home.founderBio">
+            MAYYSH TECH was founded with a clear thesis: everyday organizations do not need bloated cloud suites with fragile dependencies. They need fast, practical software that works effortlessly when work needs to happen.
+          </p>
+          <a href="./about/index.html" class="btn btn-secondary btn-sm">Read Company Story →</a>
+        </div>
+
+        <div class="founder-profile">
+          <div class="founder-avatar">MZ</div>
+          <h4 data-i18n="home.founderName">Mahir Zain</h4>
+          <p data-i18n="home.founderRole">Founder &amp; CEO, MAYYSH TECH</p>
+          <span class="tag-badge badge-neutral" style="margin-top:10px;">Engineering &amp; Product Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CTA BANNER
+  ========================================================= -->
+  <section class="section" style="padding-top: 0;">
+    <div class="wrap">
+      <div class="cta-banner">
+        <div class="cta-banner-text">
+          <span class="eyebrow on-dark" data-i18n="home.ctaBannerEyebrow">SCHEDULE A WALKTHROUGH</span>
+          <h2 data-i18n="home.ctaBannerTitle">See our software working on real operational workflows.</h2>
+          <p data-i18n="home.ctaBannerDesc">
+            Book a 20-minute product demonstration. We will walk you through live features, offline workflows, and answer your operational questions.
+          </p>
+        </div>
+
+        <div class="cta-banner-actions">
+          <a href="./contact/index.html" class="btn btn-primary" data-i18n="home.ctaBookDemoBtn">Book a Live Demo</a>
+          <a href="#" class="btn btn-whatsapp js-whatsapp" data-i18n="home.ctaTalkBtn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.4.8-1.4.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.5-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+            Direct WhatsApp Line
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================= -->
+  <footer>
+    <div class="wrap">
+      <div class="foot-top">
+        <div class="foot-brand-col">
+          <div class="brand">
+            <img src="./assets/mark.svg" alt="MAYYSH TECH mark" width="30" height="30" />
+            <span class="brand-name">MAYYSH TECH</span>
+          </div>
+          <p style="font-size:13.5px; color:var(--slate-400); max-width:32ch;" data-i18n="common.footerTagline">
+            Practical software products built for education, healthcare, and real-world business operations.
+          </p>
+          <p style="font-size:12.5px; color:var(--slate-500); font-family:var(--font-mono);" data-i18n="common.footerOrigin">
+            Engineered in Patan, Gujarat • Built for India and the World
+          </p>
+          <div style="margin-top:8px;">
+            <div class="lang-switch-pill on-dark">
+              <button type="button" class="lang-btn active" data-lang="en">ENGLISH</button>
+              <span class="lang-divider">|</span>
+              <button type="button" class="lang-btn" data-lang="hinglish">HINGLISH</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="foot-col">
+          <h5 data-i18n="common.productsTitle">Products</h5>
+          <ul>
+            <li><a href="./products/era-campus/index.html">Era Campus (School ERP)</a></li>
+            <li><a href="./products/mayysh-care/index.html">Mayysh Care (Hospital HMS)</a></li>
+            <li><a href="./products/index.html">Product Pipeline</a></li>
+          </ul>
+        </div>
+
+        <div class="foot-col">
+          <h5 data-i18n="common.solutionsTitle">Solutions</h5>
+          <ul>
+            <li><a href="./solutions/school-management-software/index.html">School Management</a></li>
+            <li><a href="./solutions/hospital-management-software/index.html">Hospital Management</a></li>
+            <li><a href="./solutions/offline-business-software/index.html">Offline Business Software</a></li>
+            <li><a href="./solutions/custom-software/index.html">Custom Software Solutions</a></li>
+          </ul>
+        </div>
+
+        <div class="foot-col">
+          <h5 data-i18n="common.companyTitle">Company</h5>
+          <ul>
+            <li><a href="./about/index.html" data-i18n="common.navAbout">About Company</a></li>
+            <li><a href="./case-studies/index.html" data-i18n="common.navDemonstrations">Demonstrations</a></li>
+            <li><a href="./resources/index.html" data-i18n="common.navResources">Resources & Guides</a></li>
+            <li><a href="./contact/index.html" data-i18n="common.navContact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="foot-col">
+          <h5 data-i18n="common.connectTitle">Connect</h5>
+          <ul>
+            <li><a href="#" class="js-whatsapp" data-i18n="common.chatOnWhatsApp">WhatsApp</a></li>
+            <li><a href="./contact/index.html" data-i18n="common.navBookDemo">Book a Demo</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="foot-bottom">
+        <span>© <span id="copyrightYear"></span> MAYYSH TECH. <span data-i18n="common.footerRights">All rights reserved.</span></span>
+        <span data-i18n="common.footerFounder">Mahir Zain — Founder &amp; CEO</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action -->
+  <a href="#" class="wa-floating-btn js-whatsapp" aria-label="Chat directly on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.4.8-1.4.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.5-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="./js/translations.js"></script>
+  <script src="./js/i18n.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
